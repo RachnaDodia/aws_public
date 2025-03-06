@@ -11,9 +11,9 @@
         name: "{{ name }}"
         region: "us-east-1"
         key_name: ansible
-        vpc_subnet_id: subnet-0aa9a9eba96cc987c 
+        vpc_subnet_id: subnet-0cdec228362218c5f 
         instance_type: "{{ size }}"
-        security_group: sg-05d9c81391f6d248f
+        security_group: sg-07aa4cae006753433
         network:
           assign_public_ip: true
         image_id: ami-0c7af5fe939f2677f
