@@ -1,0 +1,26 @@
+---
+- name: Create an EC2 instance
+  hosts: all
+  vars:
+    ansible_python_interpreter: /usr/bin/python3.8
+  become: true
+  gather_facts: False
+  tasks:
+    - name: start an instance with a public IP address
+      amazon.aws.ec2_instance:
+        name: "{{ name }}"
+        region: "us-east-1"
+        key_name: ansible
+        vpc_subnet_id: subnet-0aa9a9eba96cc987c 
+        instance_type: "{{ size }}"
+        security_group: sg-05d9c81391f6d248f
+        network:
+          assign_public_ip: true
+        image_id: ami-0c7af5fe939f2677f
+        tags:
+          Environment: Testing
+      register: ec2
+
+    - name: Print new instance ID
+      debug:
+        msg: "EC2 instance ID is {{ ec2.instance_ids[0] }}"
