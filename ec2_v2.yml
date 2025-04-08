@@ -15,7 +15,7 @@
         instance_type: "{{ size }}"
         security_group: sg-03f280c40351ab526
         network:
-          assign_public_ip: true
+          - assign_public_ip: true
         image_id: ami-00a929b66ed6e0de6
         tags:
           Environment: Testing
