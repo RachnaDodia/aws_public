@@ -11,12 +11,12 @@
         name: "{{ name }}"
         region: "us-east-1"
         key_name: ansible
-        vpc_subnet_id: subnet-0cdec228362218c5f 
+        vpc_subnet_id: vpc-023304be950ab18d8
         instance_type: "{{ size }}"
-        security_group: sg-07aa4cae006753433
+        security_group: sg-03f280c40351ab526
         network:
           assign_public_ip: true
-        image_id: ami-0c7af5fe939f2677f
+        image_id: ami-0c15e602d3d6c6c4a
         tags:
           Environment: Testing
       register: ec2
