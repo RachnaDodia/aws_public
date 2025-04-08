@@ -13,7 +13,7 @@
         key_name: ansible
         vpc_subnet_id: vpc-023304be950ab18d8
         instance_type: "{{ size }}"
-        security_group: sg-03f280c40351ab526
+        security_group_ids: sg-03f280c40351ab526
         network:
           assign_public_ip: true
         image_id: ami-00a929b66ed6e0de6
