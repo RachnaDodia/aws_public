@@ -8,12 +8,12 @@
   tasks:
     - name: start an instance with a public IP address
       amazon.aws.ec2_instance:
-        name: "{{ name }}"
+        name: test
         region: "us-east-1"
         key_name: ansible
-        vpc_subnet_id: vpc-023304be950ab18d8
-        instance_type: "{{ size }}"
-        security_group: sg-03f280c40351ab526
+        vpc_subnet_id: vpc-011fb62667a064b08
+        instance_type: "t3.micro"
+        security_group: sg-0a0c3bfac8698113f
         network:
           - assign_public_ip: true
         image_id: ami-00adafae70b8029d8
