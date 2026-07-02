@@ -15,7 +15,7 @@
         instance_type: "t3.micro"
         security_group: sg-0a0c3bfac8698113f
         network:
-          - assign_public_ip: true
+          assign_public_ip: true
         image_id: ami-00adafae70b8029d8
         tags:
           Environment: Testing
