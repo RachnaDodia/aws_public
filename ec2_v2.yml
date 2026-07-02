@@ -11,7 +11,7 @@
         name: test
         region: "us-east-1"
         key_name: ansible
-        vpc_subnet_id: vpc-056549ad7d13dc74c
+        vpc_subnet_id: subnet-011fb62667a064b08
         instance_type: "t3.micro"
         security_group: sg-0a0c3bfac8698113f
         network:
