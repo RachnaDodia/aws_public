@@ -11,9 +11,9 @@
         name: "{{ name }}"
         region: "us-east-1"
         key_name: boi
-        vpc_subnet_id: subnet-011fb62667a064b08
+        vpc_subnet_id: subnet-09c636bdcdd5baf6c
         instance_type: "{{ size }}"
-        security_group: sg-0a0c3bfac8698113f
+        security_group: sg-0734cb7433730cc45
         network:
           assign_public_ip: true
         image_id: ami-00adafae70b8029d8
