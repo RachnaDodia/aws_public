@@ -3,7 +3,7 @@
   hosts: all
   vars:
     ansible_python_interpreter: /usr/bin/python3
-  become: true
+#  become: true
   gather_facts: False
   tasks:
     - name: start an instance with a public IP address
